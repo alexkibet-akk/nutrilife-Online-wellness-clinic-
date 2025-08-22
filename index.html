@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriLife Wellness Clinic</title>
+  <title>NutriLife Wellness</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f9f9;
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #4caf50, #2e7d32);
+      background: linear-gradient(90deg, #4CAF50, #2E7D32);
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 40px;
     }
     nav {
-      margin-top: 10px;
+      background: #388E3C;
+      padding: 15px;
+      text-align: center;
     }
     nav a {
       color: white;
@@ -31,111 +32,141 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .intro {
-      padding: 30px;
-      text-align: center;
-      background: #e8f5e9;
+    nav a:hover {
+      text-decoration: underline;
     }
-    .intro img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-top: 15px;
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .services {
-      padding: 30px;
+    .services, .bmi, .photos {
       background: #ffffff;
+      margin: 20px 0;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     }
-    .services h2 {
-      text-align: center;
-      color: #2e7d32;
-    }
-    .service {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      margin: 20px auto;
-      max-width: 600px;
-      padding: 20px;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-    }
-    .service img {
-      width: 100%;
-      border-radius: 12px;
+    .services h2, .bmi h2, .photos h2 {
+      color: #2E7D32;
       margin-bottom: 15px;
     }
-    .service h3 {
-      margin-top: 0;
-      color: #388e3c;
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services li {
+      background: #e8f5e9;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    .services span {
+      float: right;
+      font-weight: bold;
+      color: #1B5E20;
+    }
+    .photos img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .whatsapp {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .whatsapp a {
+      background: #25D366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .whatsapp a:hover {
+      background: #128C7E;
     }
     footer {
       text-align: center;
+      background: #2E7D32;
+      color: white;
       padding: 20px;
-      background: #2e7d32;
-      color: white;
       margin-top: 40px;
-    }
-    .whatsapp {
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>NutriLife Wellness Clinic</h1>
-    <nav>
-      <a href="#intro">Who We Are</a>
-      <a href="#services">Our Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="intro" class="intro">
-    <h2>Who We Are</h2>
-    <p>
-      At NutriLife Wellness Clinic, we are committed to improving health and well-being 
-      through expert nutrition and lifestyle counseling. Our team of professional nutritionists 
-      and diet specialists provides personalized care for individuals, families, and corporations.
-    </p>
-    <img src="https://img.freepik.com/free-photo/nutritionist-doctor-lab-coat-holding-clipboard-fresh-fruits_482257-21426.jpg" alt="Nutrition Doctor">
-  </section>
+<header>
+  <h1>NutriLife Wellness</h1>
+  <p>Your Trusted Partner in Nutrition & Health</p>
+</header>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    
-    <div class="service">
-      <img src="https://img.freepik.com/free-photo/corporate-team-nutrition-training.jpg" alt="Corporate Nutrition Counseling">
-      <h3>Corporate Nutrition Screenings, Education & Counseling</h3>
-      <p>We provide tailored health and nutrition programs for organizations to improve employee well-being and productivity.</p>
-      <p><strong>Price: 35,000 KES</strong></p>
-    </div>
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#bmi">BMI Info</a>
+  <a href="#photos">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <div class="service">
-      <img src="https://img.freepik.com/free-photo/doctor-counseling-patient.jpg" alt="Nutrition Doctor Counseling">
-      <h3>Nutrition Education & Counseling (Renal Conditions)</h3>
-      <p>Specialized diet and nutrition support for individuals with kidney-related health conditions.</p>
-      <p><strong>Price: 5,000 KES</strong></p>
-    </div>
-    
-    <div class="service">
-      <img src="https://img.freepik.com/free-photo/female-nutritionist-talking-patient.jpg" alt="Nutrition Counseling">
-      <h3>General Nutrition Counseling</h3>
-      <p>One-on-one sessions to help you manage weight, improve lifestyle, and achieve optimal health.</p>
-      <p><strong>Price: 3,000 KES</strong></p>
-    </div>
+<section id="about">
+  <h2>Who We Are</h2>
+  <p>
+    At <b>NutriLife Wellness</b>, we are dedicated to empowering individuals and organizations with 
+    expert nutrition education, personalized diet counseling, and wellness programs. 
+    Our team of professional nutritionists provides evidence-based solutions 
+    for preventing and managing lifestyle and nutrition-related conditions.
+  </p>
+</section>
 
-  </section>
+<section id="services" class="services">
+  <h2>Our Services & Pricing</h2>
+  <ul>
+    <li>Corporate Nutrition Screenings, Education & Counseling <span>KES 35,000</span></li>
+    <li>Nutrition Counseling for Diabetes <span>KES 5,000</span></li>
+    <li>Hypertension & Heart Disease Counseling <span>KES 5,000</span></li>
+    <li>Weight Management & Obesity Counseling <span>KES 5,000</span></li>
+    <li>Renal (Kidney) Nutrition Counseling <span>KES 5,000</span></li>
+    <li>Cancer Nutrition Support <span>KES 6,000</span></li>
+    <li>Maternal, Infant & Young Child Feeding Counseling <span>KES 4,000</span></li>
+  </ul>
+</section>
 
-  <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>?? Nairobi, Kenya</p>
-    <a class="whatsapp" href="https://wa.me/254795889789" target="_blank">?? Chat with us on WhatsApp</a>
-    <p>© 2025 NutriLife Wellness Clinic. All rights reserved.</p>
-  </footer>
+<section id="bmi" class="bmi">
+  <h2>WHO BMI Ranges</h2>
+  <p><b>Body Mass Index (BMI)</b> is a useful tool to assess whether you are underweight, healthy, overweight, or obese.</p>
+  <ul>
+    <li>Underweight: &lt; 18.5</li>
+    <li>Normal Weight: 18.5 – 24.9</li>
+    <li>Overweight: 25 – 29.9</li>
+    <li>Obesity Class I: 30 – 34.9</li>
+    <li>Obesity Class II: 35 – 39.9</li>
+    <li>Obesity Class III: ? 40</li>
+  </ul>
+</section>
+
+<section id="photos" class="photos">
+  <h2>Gallery</h2>
+  <img src="https://i.ibb.co/nf5YwLc/doctor-nutrition.jpg" alt="Doctor counseling client">
+  <img src="https://i.ibb.co/2YHmcG2/fruits-stethoscope.jpg" alt="Fruits and stethoscope">
+  <img src="https://i.ibb.co/9cmVhgy/nutrition-counseling.jpg" alt="Nutrition counseling session">
+  <img src="https://i.ibb.co/wK4fFN4/healthy-food.jpg" alt="Healthy food">
+  <img src="https://i.ibb.co/LxXwQ9R/nutrition-doctor.jpg" alt="Nutritionist with stethoscope">
+</section>
+
+<div id="contact" class="whatsapp">
+  <h2>Contact Us</h2>
+  <p>Click below to chat with us directly on WhatsApp for appointments or inquiries.</p>
+  <a href="https://wa.me/254795889789" target="_blank">?? Chat on WhatsApp</a>
+</div>
+
+<footer>
+  <p>© 2025 NutriLife Wellness | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
