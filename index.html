@@ -13,22 +13,17 @@
       color: #333;
     }
     header {
-      background: linear-gradient(to right, #4CAF50, #81C784);
+      background: linear-gradient(135deg, #4caf50, #2e7d32);
       color: white;
       padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 5px 0 0;
+      font-size: 2.5em;
     }
     nav {
-      background-color: #388E3C;
-      padding: 10px;
-      text-align: center;
+      margin-top: 10px;
     }
     nav a {
       color: white;
@@ -36,134 +31,111 @@
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2E7D32;
-      border-bottom: 2px solid #81C784;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
     .intro {
+      padding: 30px;
       text-align: center;
+      background: #e8f5e9;
     }
     .intro img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      max-width: 200px;
+      border-radius: 50%;
+      margin-top: 15px;
     }
     .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      padding: 30px;
+      background: #ffffff;
+    }
+    .services h2 {
+      text-align: center;
+      color: #2e7d32;
     }
     .service {
-      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      margin: 20px auto;
+      max-width: 600px;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     }
     .service img {
       width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-bottom: 15px;
     }
-    .pricing {
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold;
-      color: #E64A19;
+    .service h3 {
+      margin-top: 0;
+      color: #388e3c;
     }
     footer {
-      background: #2E7D32;
-      color: white;
       text-align: center;
       padding: 20px;
+      background: #2e7d32;
+      color: white;
       margin-top: 40px;
     }
     .whatsapp {
-      display: inline-block;
-      margin-top: 15px;
       background: #25D366;
       color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
+      padding: 15px;
+      border-radius: 50px;
       text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
       font-weight: bold;
-    }
-    .whatsapp:hover {
-      background: #128C7E;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>NutriLife Wellness Clinic</h1>
-    <p>Your Partner in Nutrition, Health, and Wellness</p>
+    <nav>
+      <a href="#intro">Who We Are</a>
+      <a href="#services">Our Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="intro">
+  <section id="intro" class="intro">
     <h2>Who We Are</h2>
-    <p>At <b>NutriLife Wellness Clinic</b>, we are dedicated to transforming lives through personalized nutrition and lifestyle counseling. Our team of professional nutritionists and wellness experts help individuals, families, and organizations achieve optimal health and prevent non-communicable diseases such as diabetes, hypertension, obesity, and heart disease.</p>
-    <img src="https://images.unsplash.com/photo-1620217344943-5fa5e7a1f7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Nutritionist counseling a client">
+    <p>
+      At NutriLife Wellness Clinic, we are committed to improving health and well-being 
+      through expert nutrition and lifestyle counseling. Our team of professional nutritionists 
+      and diet specialists provides personalized care for individuals, families, and corporations.
+    </p>
+    <img src="https://img.freepik.com/free-photo/nutritionist-doctor-lab-coat-holding-clipboard-fresh-fruits_482257-21426.jpg" alt="Nutrition Doctor">
   </section>
 
-  <section id="services">
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Diet Counseling">
-        <h3>One-on-One Nutrition Counseling</h3>
-        <p>Personalized nutrition advice tailored to your health goals and medical needs.</p>
-        <p class="pricing">KES 1,500 - 5,000</p>
-      </div>
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Corporate Wellness">
-        <h3>Corporate Wellness Programs</h3>
-        <p>Health talks, screenings, and tailored nutrition workshops for organizations.</p>
-        <p class="pricing">KES 5,000 - 10,000</p>
-      </div>
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Meal Planning">
-        <h3>Meal Planning & Diet Therapy</h3>
-        <p>Custom diet plans to manage conditions such as diabetes, hypertension, and obesity.</p>
-        <p class="pricing">KES 2,000 - 6,000</p>
-      </div>
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80" alt="Wellness Coaching">
-        <h3>Wellness Coaching</h3>
-        <p>Guidance on healthy lifestyle habits, fitness, and stress management.</p>
-        <p class="pricing">KES 500 - 3,000</p>
-      </div>
+    
+    <div class="service">
+      <img src="https://img.freepik.com/free-photo/corporate-team-nutrition-training.jpg" alt="Corporate Nutrition Counseling">
+      <h3>Corporate Nutrition Screenings, Education & Counseling</h3>
+      <p>We provide tailored health and nutrition programs for organizations to improve employee well-being and productivity.</p>
+      <p><strong>Price: 35,000 KES</strong></p>
     </div>
+
+    <div class="service">
+      <img src="https://img.freepik.com/free-photo/doctor-counseling-patient.jpg" alt="Nutrition Doctor Counseling">
+      <h3>Nutrition Education & Counseling (Renal Conditions)</h3>
+      <p>Specialized diet and nutrition support for individuals with kidney-related health conditions.</p>
+      <p><strong>Price: 5,000 KES</strong></p>
+    </div>
+    
+    <div class="service">
+      <img src="https://img.freepik.com/free-photo/female-nutritionist-talking-patient.jpg" alt="Nutrition Counseling">
+      <h3>General Nutrition Counseling</h3>
+      <p>One-on-one sessions to help you manage weight, improve lifestyle, and achieve optimal health.</p>
+      <p><strong>Price: 3,000 KES</strong></p>
+    </div>
+
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>We’d love to help you on your health journey. Reach out today!</p>
-    <p><b>Phone:</b> +254 795 889 789</p>
-    <p><b>Email:</b> info@nutrilifeclinic.com</p>
-    <a class="whatsapp" href="https://wa.me/254795889789" target="_blank">?? Chat on WhatsApp</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 NutriLife Wellness Clinic. All Rights Reserved.</p>
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>?? Nairobi, Kenya</p>
+    <a class="whatsapp" href="https://wa.me/254795889789" target="_blank">?? Chat with us on WhatsApp</a>
+    <p>© 2025 NutriLife Wellness Clinic. All rights reserved.</p>
   </footer>
 </body>
 </html>
