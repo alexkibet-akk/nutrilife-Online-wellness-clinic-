@@ -9,136 +9,180 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      background: #f9f9f9;
       color: #333;
-      background-color: #f9f9f9;
+      animation: fadeIn 2s ease-in;
     }
     header {
-      position: relative;
-      text-align: center;
+      background: url('https://images.unsplash.com/photo-1572441710534-680c6a4d1e98?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') 
+      no-repeat center center/cover;
       color: white;
-    }
-    header img {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-      filter: brightness(60%);
-    }
-    header .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      padding: 80px 20px;
+      text-align: center;
     }
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.8em;
       margin: 0;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.2em;
+    }
+    nav {
+      background: #28a745;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
     section {
       padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      text-align: center;
+      animation: slideUp 1.5s ease-in-out;
     }
-    h2 {
-      color: #27ae60;
-      margin-bottom: 20px;
+    section h2 {
+      color: #28a745;
     }
-    .services, .pricing, .diseases {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .services, .pricing {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
     }
     .card {
       background: white;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
     }
-    .card h3 {
-      margin-top: 0;
-      color: #2c3e50;
+    .card:hover {
+      transform: scale(1.05);
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #2c3e50;
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea, form button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #28a745;
       color: white;
+      border: none;
+      cursor: pointer;
     }
-    footer a {
-      color: #27ae60;
+    /* WhatsApp Floating Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       text-decoration: none;
+      animation: bounce 2s infinite;
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://images.pexels.com/photos/5945639/pexels-photo-5945639.jpeg" alt="Fruits and stethoscope">
-    <div class="hero-text">
-      <h1>NutriLife Wellness Clinic</h1>
-      <p>Your Partner in Nutrition & Lifestyle Care</p>
-    </div>
+    <h1>NutriLife Wellness Clinic</h1>
+    <p>Your Partner in Nutrition & Wellness</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
     <h2>Our Services</h2>
     <div class="services">
       <div class="card">
-        <h3>Dietary Consultations</h3>
-        <p>Personalized nutrition advice tailored to your needs and health goals.</p>
-      </div>
-      <div class="card">
-        <h3>Meal Planning</h3>
-        <p>Weekly and monthly balanced diet plans for individuals and families.</p>
-      </div>
-      <div class="card">
         <h3>Weight Management</h3>
-        <p>Guided programs for weight loss, healthy gain, and lifestyle adjustment.</p>
+        <p>Personalized diet plans to help you lose or gain weight safely.</p>
       </div>
       <div class="card">
-        <h3>Nutrition Education</h3>
-        <p>Workshops, webinars, and one-on-one coaching sessions.</p>
+        <h3>Diabetes Care</h3>
+        <p>Nutrition strategies to manage blood sugar effectively.</p>
+      </div>
+      <div class="card">
+        <h3>Heart Health</h3>
+        <p>Diets tailored for managing hypertension and cholesterol.</p>
+      </div>
+      <div class="card">
+        <h3>Child & Maternal Nutrition</h3>
+        <p>Support for expectant mothers, infants, and children.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="pricing">
     <h2>Pricing</h2>
     <div class="pricing">
-      <div class="card"><h3>Initial Consultation</h3><p>KES 1,500</p></div>
-      <div class="card"><h3>Meal Plan (1 Week)</h3><p>KES 3,000</p></div>
-      <div class="card"><h3>Meal Plan (1 Month)</h3><p>KES 8,000</p></div>
-      <div class="card"><h3>Comprehensive Wellness Program</h3><p>KES 10,000</p></div>
-    </div>
-    <p><b>Payment via M-Pesa Till/Number: 0795889789</b></p>
-  </section>
-
-  <section>
-    <h2>We Manage</h2>
-    <div class="diseases">
-      <div class="card"><h3>Diabetes</h3><p>Nutrition guidance to control blood sugar and prevent complications.</p></div>
-      <div class="card"><h3>Hypertension</h3><p>Heart-healthy diet plans to lower and maintain blood pressure.</p></div>
-      <div class="card"><h3>Obesity</h3><p>Safe weight reduction programs with sustainable habits.</p></div>
-      <div class="card"><h3>Heart Disease</h3><p>Dietary modifications to reduce cholesterol and improve cardiac health.</p></div>
-      <div class="card"><h3>Kidney Disease</h3><p>Specialized meal plans to reduce strain on kidneys.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Meet Your Nutrition Doctor</h2>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/7578802/pexels-photo-7578802.jpeg" alt="Nutrition Doctor" style="width:100%;border-radius:10px;">
-      <p>At NutriLife Wellness Clinic, our certified nutrition professionals are dedicated to guiding you on your journey towards better health and sustainable lifestyle changes.</p>
+      <div class="card">
+        <h3>Consultation</h3>
+        <p>KES 500</p>
+      </div>
+      <div class="card">
+        <h3>Nutrition Plan</h3>
+        <p>KES 2,000</p>
+      </div>
+      <div class="card">
+        <h3>Monthly Follow-up</h3>
+        <p>KES 5,000</p>
+      </div>
+      <div class="card">
+        <h3>Corporate Wellness</h3>
+        <p>KES 10,000</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>Contact us: <a href="mailto:alexkibet.ak5@gmail.com">alexkibet.ak5@gmail.com</a> | Call: 0795889789</p>
-    <p>&copy; 2025 NutriLife Wellness Clinic. All rights reserved.</p>
-  </footer>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mzzbkjjz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp" href="https://wa.me/254795889789" target="_blank">??</a>
 
 </body>
 </html>
