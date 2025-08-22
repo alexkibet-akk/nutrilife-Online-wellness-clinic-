@@ -3,170 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriLife Wellness</title>
+  <title>NutriLife Consulting</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f9f9;
+      background: #f0f8ff;
       color: #333;
     }
     header {
-      background: linear-gradient(90deg, #4CAF50, #2E7D32);
+      background: linear-gradient(90deg, #28a745, #20c997);
       color: white;
-      padding: 30px;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
-      font-size: 40px;
+      margin: 0;
+      font-size: 2.5rem;
     }
-    nav {
-      background: #388E3C;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+    header p {
+      font-size: 1.2rem;
     }
     section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .services, .bmi, .photos {
-      background: #ffffff;
-      margin: 20px 0;
-      padding: 25px;
+    section h2 {
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+    .about {
+      background: #e9f7ef;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .services h2, .bmi h2, .photos h2 {
-      color: #2E7D32;
-      margin-bottom: 15px;
+    .service h3 {
+      margin: 10px 0;
+      color: #20c997;
     }
-    .services ul {
-      list-style-type: none;
-      padding: 0;
+    .service p {
+      margin: 5px 0;
     }
-    .services li {
-      background: #e8f5e9;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 6px;
-      font-size: 18px;
+    .service strong {
+      color: #e63946;
+      font-size: 1.2rem;
     }
-    .services span {
-      float: right;
-      font-weight: bold;
-      color: #1B5E20;
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
     .photos img {
       width: 300px;
-      margin: 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
-    .whatsapp {
-      text-align: center;
-      margin: 40px 0;
+    .bmi {
+      background: #fef9ef;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .whatsapp a {
-      background: #25D366;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
+    .bmi table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    .whatsapp a:hover {
-      background: #128C7E;
+    .bmi th, .bmi td {
+      border: 1px solid #ccc;
+      padding: 10px;
     }
     footer {
-      text-align: center;
-      background: #2E7D32;
+      background: #333;
       color: white;
+      text-align: center;
       padding: 20px;
-      margin-top: 40px;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe57;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>NutriLife Consulting</h1>
+    <p>Your partner in health, nutrition, and wellness</p>
+  </header>
 
-<header>
-  <h1>NutriLife Wellness</h1>
-  <p>Your Trusted Partner in Nutrition & Health</p>
-</header>
+  <!-- About Section -->
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>
+      At <strong>NutriLife Consulting</strong>, we provide expert nutrition counseling and health education tailored for individuals and corporates. 
+      Our services focus on preventing and managing non-communicable diseases, promoting maternal and child health, and guiding healthy lifestyle choices. 
+      We are dedicated to helping you achieve optimal wellness.
+    </p>
+  </section>
 
-<nav>
-  <a href="#about">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#bmi">BMI Info</a>
-  <a href="#photos">Gallery</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- Services Section -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Corporate Nutrition Screenings</h3>
+        <p>Comprehensive workplace nutrition education and health screenings for teams and staff.</p>
+        <p><strong>KES 35,000</strong></p>
+      </div>
+      <div class="service">
+        <h3>Renal Nutrition Counseling</h3>
+        <p>Specialized guidance for clients with kidney-related conditions.</p>
+        <p><strong>KES 5,000</strong></p>
+      </div>
+      <div class="service">
+        <h3>Non-Communicable Diseases Counseling</h3>
+        <p>Education and nutrition counseling for diabetes, hypertension, cancer prevention, and heart health.</p>
+        <p><strong>KES 6,000</strong></p>
+      </div>
+      <div class="service">
+        <h3>Maternal, Infant & Child Nutrition</h3>
+        <p>Personalized counseling on maternal diets, breastfeeding, and child feeding practices.</p>
+        <p><strong>KES 4,500</strong></p>
+      </div>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>Who We Are</h2>
-  <p>
-    At <b>NutriLife Wellness</b>, we are dedicated to empowering individuals and organizations with 
-    expert nutrition education, personalized diet counseling, and wellness programs. 
-    Our team of professional nutritionists provides evidence-based solutions 
-    for preventing and managing lifestyle and nutrition-related conditions.
-  </p>
-</section>
+  <!-- Photos Section -->
+  <section>
+    <h2>Our Work in Action</h2>
+    <div class="photos">
+      <img src="https://images.pexels.com/photos/6812531/pexels-photo-6812531.jpeg" alt="Doctor counseling patient">
+      <img src="https://images.pexels.com/photos/6129234/pexels-photo-6129234.jpeg" alt="Doctor with stethoscope">
+      <img src="https://images.pexels.com/photos/3873174/pexels-photo-3873174.jpeg" alt="Nutritionist with vegetables">
+      <img src="https://images.pexels.com/photos/6738680/pexels-photo-6738680.jpeg" alt="Health consultation">
+      <img src="https://images.pexels.com/photos/7214942/pexels-photo-7214942.jpeg" alt="Healthy lifestyle counseling">
+      <img src="https://images.pexels.com/photos/3958507/pexels-photo-3958507.jpeg" alt="Doctor giving advice">
+    </div>
+  </section>
 
-<section id="services" class="services">
-  <h2>Our Services & Pricing</h2>
-  <ul>
-    <li>Corporate Nutrition Screenings, Education & Counseling <span>KES 35,000</span></li>
-    <li>Nutrition Counseling for Diabetes <span>KES 5,000</span></li>
-    <li>Hypertension & Heart Disease Counseling <span>KES 5,000</span></li>
-    <li>Weight Management & Obesity Counseling <span>KES 5,000</span></li>
-    <li>Renal (Kidney) Nutrition Counseling <span>KES 5,000</span></li>
-    <li>Cancer Nutrition Support <span>KES 6,000</span></li>
-    <li>Maternal, Infant & Young Child Feeding Counseling <span>KES 4,000</span></li>
-  </ul>
-</section>
+  <!-- BMI Section -->
+  <section>
+    <h2>WHO BMI Ranges</h2>
+    <div class="bmi">
+      <table>
+        <tr><th>Category</th><th>BMI Range</th></tr>
+        <tr><td>Underweight</td><td>Below 18.5</td></tr>
+        <tr><td>Normal weight</td><td>18.5 – 24.9</td></tr>
+        <tr><td>Overweight</td><td>25 – 29.9</td></tr>
+        <tr><td>Obesity Class I</td><td>30 – 34.9</td></tr>
+        <tr><td>Obesity Class II</td><td>35 – 39.9</td></tr>
+        <tr><td>Obesity Class III</td><td>40 and above</td></tr>
+      </table>
+    </div>
+  </section>
 
-<section id="bmi" class="bmi">
-  <h2>WHO BMI Ranges</h2>
-  <p><b>Body Mass Index (BMI)</b> is a useful tool to assess whether you are underweight, healthy, overweight, or obese.</p>
-  <ul>
-    <li>Underweight: &lt; 18.5</li>
-    <li>Normal Weight: 18.5 – 24.9</li>
-    <li>Overweight: 25 – 29.9</li>
-    <li>Obesity Class I: 30 – 34.9</li>
-    <li>Obesity Class II: 35 – 39.9</li>
-    <li>Obesity Class III: ? 40</li>
-  </ul>
-</section>
+  <!-- Contact Section -->
+  <section>
+    <h2>Contact Us</h2>
+    <p>For bookings and consultations, reach us directly on WhatsApp.</p>
+    <a href="https://wa.me/254795889789" target="_blank" class="whatsapp-btn">?? Chat on WhatsApp</a>
+  </section>
 
-<section id="photos" class="photos">
-  <h2>Gallery</h2>
-  <img src="https://i.ibb.co/nf5YwLc/doctor-nutrition.jpg" alt="Doctor counseling client">
-  <img src="https://i.ibb.co/2YHmcG2/fruits-stethoscope.jpg" alt="Fruits and stethoscope">
-  <img src="https://i.ibb.co/9cmVhgy/nutrition-counseling.jpg" alt="Nutrition counseling session">
-  <img src="https://i.ibb.co/wK4fFN4/healthy-food.jpg" alt="Healthy food">
-  <img src="https://i.ibb.co/LxXwQ9R/nutrition-doctor.jpg" alt="Nutritionist with stethoscope">
-</section>
-
-<div id="contact" class="whatsapp">
-  <h2>Contact Us</h2>
-  <p>Click below to chat with us directly on WhatsApp for appointments or inquiries.</p>
-  <a href="https://wa.me/254795889789" target="_blank">?? Chat on WhatsApp</a>
-</div>
-
-<footer>
-  <p>© 2025 NutriLife Wellness | All Rights Reserved</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 NutriLife Consulting | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
